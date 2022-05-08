@@ -1,0 +1,124 @@
+// Fonts
+$text-font-stack: "Open Sans", "Helvetica Neue Light", "Helvetica Neue",
+  "Helvetica", "Arial", sans-serif !default;
+$code-font-stack: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
+  "Monaco", monospace !default;
+$font-family--primary: "Nunito", $text-font-stack;
+
+$font-size-map: (
+  "4xl": 52px,
+  "3xl": 36px,
+  "2xl": 32px,
+  "xl": 24px,
+  "lg": 18px,
+  "base": 16px,
+  "md": 14px,
+  "sm": 12px,
+  "xs": 11px,
+);
+
+$font-weight-map: (
+  "lighter": 200,
+  "light": 300,
+  "regular": 400,
+  "medium": 500,
+  "semi-bold": 600,
+  "bold": 700,
+  "bolder": 800,
+  "black": 900,
+);
+
+// Spacings
+$space-0: 2px;
+$space-1: 4px;
+$space-2: 8px;
+$space-3: 12px;
+$space-4: 16px;
+$space-5: 20px;
+$space-6: 24px;
+$space-7: 28px;
+$space-8: 32px;
+
+// Sizings
+$size-xxs: 4px;
+$size-xs: 8px;
+$size-sm: 12px;
+$size-md: 14px;
+$size-lg: 18px;
+$size-xl: 24px;
+
+// Borders
+$border-radius-map: (
+  "sm": 4px,
+  "base": 16px,
+  "full": 50%,
+);
+
+// Colors
+$color-primary: hsl(342, 97%, 50%); // #f60974
+$color-primary-400: hsl(342, 97%, 60%);
+$color-primary-300: hsl(342, 97%, 70%);
+$color-primary-200: hsl(342, 97%, 80%);
+$color-primary-100: hsl(342, 97%, 90%);
+$color-primary-50: hsl(342, 97%, 95%);
+
+$color-secondary: hsl(183, 56%, 50%); // #163ce9
+$color-secondary-400: hsl(183, 56%, 60%);
+$color-secondary-300: hsl(183, 56%, 70%);
+$color-secondary-200: hsl(183, 56%, 80%);
+$color-secondary-100: hsl(183, 56%, 90%);
+$color-secondary-50: hsl(183, 56%, 95%);
+
+// Shadow
+$shadow-1: 0px 5px 10px rgba(0, 0, 0, 0.05);
+$shadow-2: 0px 5px 20px rgba(0, 0, 0, 0.05);
+$shadow-3: 0px 10px 30px 2px rgba(0, 0, 0, 0.1);
+$shadow-4: 0px 30px 40px rgba(0, 0, 0, 0.15);
+$shadow-5: 0px 40px 50px rgba(0, 0, 0, 0.15);
+$shadow-6: 0px 10px 30px 10px rgba(0, 0, 0, 0.04);
+
+/// Copy text color
+/// @type Color
+$text-color: #353935 !default;
+$text-color-darker: #141514 !default;
+$text-color-light: #595f59 !default;
+$text-color-lighter: #717e7f !default;
+
+/// Main brand color
+/// @type Color
+$brand-color: rgb(229, 0, 80) !default;
+$primary-color: #e50050;
+
+/// Light grey
+/// @type Color
+$light-grey: rgb(237, 237, 237) !default;
+
+/// Medium grey
+/// @type Color
+$mid-grey: rgb(153, 153, 153) !default;
+
+/// Dark grey
+/// @type Color
+$dark-grey: rgb(68, 68, 68) !default;
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  "small": 320px,
+  "medium": 768px,
+  "large": 1024px,
+) !default;
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'https://cdn.example.com/assets/';
+$base-url: "/assets/" !default;
+
+// Randome
+$app-bar-height: 56px !default;

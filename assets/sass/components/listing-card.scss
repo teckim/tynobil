@@ -1,0 +1,87 @@
+$card-border-radius: border-radius("base");
+
+.listing-card {
+  position: relative;
+  width: 332px;
+  min-width: 332px;
+  height: 100%;
+  padding: $space-6;
+  overflow: hidden;
+
+  &__wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    overflow: hidden;
+    background: #fff;
+    border-radius: $card-border-radius;
+    box-shadow: $shadow-3;
+  }
+
+  &__image {
+    height: 220px;
+    background-image: url("~assets/images/car-1.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 $space-4 $space-4;
+
+    @include flex-row-gap($space-2);
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: $card-border-radius;
+      border-top-left-radius: $card-border-radius;
+      border-top-right-radius: $card-border-radius;
+      left: 0;
+      right: 0;
+      bottom: 100%;
+      width: 100%;
+      background: #fff;
+    }
+  }
+
+  &__title {
+    @include line-ellipsis(2);
+    @include font-style("lg", "base");
+  }
+
+  &__info-stack {
+    display: flex;
+    align-items: center;
+    color: $text-color-lighter;
+
+    @include font-style("md", "base");
+
+    & > * {
+      display: flex;
+      align-items: center;
+    }
+
+    & > *:not(:last-child)::after {
+      content: "";
+      display: inline-block;
+      min-height: $size-xxs;
+      min-width: $size-xxs;
+      margin: 0 $space-2;
+      border-radius: border-radius("full");
+      background-color: #eaeaea;
+
+      // @include font-style('xl', 'bold')
+    }
+  }
+
+  &__price {
+    text-align: right;
+    color: $color-secondary;
+    letter-spacing: 0.02em;
+
+    @include font-style("lg", "bold");
+  }
+}

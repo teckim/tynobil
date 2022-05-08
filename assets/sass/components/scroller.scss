@@ -1,0 +1,38 @@
+.scroller {
+  padding: 0 $space-4;
+
+  &__title-stack {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &__title {
+    @include font-style("3xl", "base");
+  }
+
+  &__overtitle {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: $color-primary;
+
+    @include font-style("sm", "semi-bold");
+  }
+
+  &__body {
+    margin: 0 (-$space-4);
+    overflow-x: auto;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: nowrap;
+
+    &::before , &::after {
+      content: "";
+      display: block;
+      height: 1px;
+      min-width: $space-4;
+    }
+  }
+}

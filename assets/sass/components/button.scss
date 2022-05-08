@@ -1,0 +1,32 @@
+.button {
+  position: relative;
+  display: inline-flex;
+  flex: auto;
+  align-items: center;
+  padding: $space-2 $space-8;
+  min-height: 56px;
+  line-height: 24px;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: border-radius('base');
+  background-color: $color-primary;
+  letter-spacing: 0.02em;
+
+  @include font-style('lg', 'bold');
+
+  &--primary:not(&--outlined) {
+    color: #fff;
+  }
+
+  &--outlined {
+    background-color: #fff;
+    border: 2px solid $color-primary;
+  }
+
+  &--icon {
+    padding: $space-2;
+    min-height: auto;
+    border: none;
+    border-radius: border-radius('full');
+  }
+}
