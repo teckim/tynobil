@@ -54,31 +54,3 @@
          + 'Please make sure it is defined in `$breakpoints` map.';
   }
 }
-
-// Flex Mixins
-@mixin flex-column-gap($gap) {
-  & > *:not(:last-child) {
-    margin-right: $gap;
-  }
-}
-
-@mixin flex-row-gap($gap) {
-  & > *:not(:last-child) {
-    margin-bottom: $gap;
-  }
-}
-
-// Font mixins
-@mixin font-style($size: "base", $weight: "regular") {
-  font-size: map-get($font-size-map, $size);
-  font-weight: map-get($font-weight-map, $weight);
-}
-
-// Random
-@mixin line-ellipsis($lines) {
-  display: -webkit-box;
-  -webkit-line-clamp: $lines;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}

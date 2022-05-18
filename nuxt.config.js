@@ -26,7 +26,7 @@ export default {
     scss: [
       // '~assets/scss/mixins/index.scss',
       // '~assets/scss/variables.scss',
-      '~assets/sass/abstracts/*.scss'
+      '~assets/sass/abstracts/**/*.scss'
       // '~assets/sass/main.scss'
     ]
   },

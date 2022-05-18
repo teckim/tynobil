@@ -1,0 +1,11 @@
+@mixin flex-column-gap($gap) {
+  & > *:not(:last-child) {
+    margin-right: $gap;
+  }
+}
+
+@mixin flex-row-gap($gap) {
+  & > *:not(:last-child) {
+    margin-bottom: $gap;
+  }
+}

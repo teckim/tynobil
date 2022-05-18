@@ -1,0 +1,14 @@
+// Font mixins
+@mixin font-style($size: "base", $weight: "regular") {
+  font-size: map-get($font-size-map, $size);
+  font-weight: map-get($font-weight-map, $weight);
+}
+
+// Random
+@mixin line-ellipsis($lines) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
