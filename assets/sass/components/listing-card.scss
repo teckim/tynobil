@@ -79,7 +79,7 @@ $card-border-radius: border-radius("base");
 
   &__price {
     text-align: right;
-    color: $color-secondary;
+    color: $color-primary;
     letter-spacing: 0.02em;
 
     @include font-style("lg", "bold");
