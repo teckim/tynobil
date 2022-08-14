@@ -50,7 +50,9 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    // https://tailwindcss.nuxtjs.org
+    '@nuxtjs/tailwindcss'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
