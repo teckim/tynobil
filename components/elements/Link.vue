@@ -9,6 +9,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import "~assets/sass/components/link.scss";
-</style>
+<style scoped lang="pcss" src="~/assets/sass/components/link.pcss" />

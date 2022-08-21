@@ -1,0 +1,46 @@
+.button {
+  @apply relative inline-flex flex-auto items-center justify-center gap-x-2;
+  @apply h-12 px-5 cursor-pointer rounded-md shadow-md;
+  @apply text-base;
+
+  &--sm {
+    @apply h-10 text-sm;
+  }
+
+  &--xs {
+    @apply h-8 text-xs;
+  }
+
+  &--primary {
+    @apply bg-primary;
+    @apply text-white;
+  }
+
+  &--primary:is(&--outlined) {
+    @apply border-primary-light;
+    @apply text-primary;
+  }
+
+  &--outlined {
+    @apply border-solid border-2 border-black;
+    @apply bg-white;
+    @apply shadow-none;
+  }
+
+  &--icon {
+    @apply w-12 px-0;
+    @apply rounded-full;
+  }
+
+  &--icon:is(&--sm) {
+    @apply w-10;
+  }
+
+  &--icon:is(&--xs) {
+    @apply w-8;
+  }
+
+  &--text {
+    @apply bg-transparent shadow-none;
+  }
+}

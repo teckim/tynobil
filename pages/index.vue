@@ -10,16 +10,27 @@
         </span>
       </div>
       <div class="hero__actions">
-        <Button nuxt-link="/buy" link="/buy">
+        <Button nuxt-link="/buy" link="/buy" theme="primary">
           Buy
         </Button>
-        <Button outlined>
+        <Button>
           Sell
         </Button>
       </div>
     </section>
     <section>
-      <ListingScroller>
+      <ListingCard />
+      <ListingScroller title="New Arrivals" overtitle="Hot deals now">
+        <ListingCard />
+        <ListingCard />
+        <ListingCard />
+        <ListingCard />
+        <ListingCard />
+        <ListingCard />
+      </ListingScroller>
+    </section>
+    <section>
+      <ListingScroller title="Popular">
         <ListingCard />
         <ListingCard />
         <ListingCard />
@@ -38,6 +49,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import '~assets/sass/pages/home.scss'
+<style lang="pcss" scoped>
+@import '~assets/sass/pages/home.pcss';
 </style>

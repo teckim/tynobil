@@ -1,0 +1,35 @@
+.scroller {
+  @apply py-1 px-2;
+
+  &__title-stack {
+    @apply flex justify-between items-baseline;
+  }
+
+  &__title {
+    @apply text-3xl font-sans-secondary;
+  }
+
+  &__overtitle {
+    @apply font-sans-secondary font-semibold text-sm text-primary;
+    @apply uppercase tracking-widest;
+  }
+
+  &__body {
+    @apply -mx-2;
+  }
+
+  &__list {
+    @apply flex flex-nowrap overflow-x-scroll snap-mandatory snap-x max-w-full;
+
+    & > * {
+      @apply snap-center;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+
+      @apply block h-1 w-4;
+    }
+  }
+}

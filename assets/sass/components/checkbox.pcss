@@ -1,0 +1,26 @@
+.checkbox {
+  &__container {
+    @apply flex items-center;
+  }
+
+  &__input {
+    @apply text-primary rounded border-gray-300 ring-0;
+
+    &:disabled {
+      @apply bg-gray-200;
+    }
+  }
+
+  &__label {
+    @apply ml-2 text-sm text-gray-700 font-light;
+  }
+
+  &__input:checked + &__label {
+    @apply font-medium;
+  }
+
+  &__input:disabled + &__label {
+    @apply text-gray-400;
+  }
+
+}

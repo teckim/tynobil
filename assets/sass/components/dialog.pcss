@@ -1,0 +1,25 @@
+.dialog {
+  @apply fixed z-auto inset-0;
+  @apply bg-white;
+
+  &__container {
+    @apply flex flex-col h-full;
+  }
+
+  &__header {
+    @apply flex justify-between items-center px-4 py-2;
+    @apply bg-gray-50;
+  }
+
+  &__title {
+    @apply text-xl font-sans-secondary;
+  }
+
+  &__body {
+    @apply min-h-0 h-full px-4 py-2 overflow-y-scroll;
+  }
+
+  &__footer {
+    @apply px-4 py-2;
+  }
+}

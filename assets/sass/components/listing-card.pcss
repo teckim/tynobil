@@ -1,0 +1,58 @@
+.listing-card {
+  @apply overflow-hidden flex-grow flex-shrink-0;
+  @apply w-screen h-full p-4;
+
+  &__wrapper {
+    @apply relative -z-10 flex flex-col h-full overflow-hidden;
+    @apply bg-white rounded-3xl shadow-md;
+  }
+
+  &__badge {
+    @apply absolute left-4 top-4;
+  }
+
+  &__image {
+    @apply bg-cover bg-no-repeat bg-center;
+
+    height: 220px;
+    background-image: url("~assets/images/car-1.jpeg");
+  }
+
+  &__body {
+    @apply relative flex flex-col flex-grow gap-y-2 px-4 pb-4;
+
+    &::before {
+      content: "";
+
+      @apply absolute left-0 right-0 bottom-full w-full h-6;
+      @apply bg-white rounded-t-3xl;
+    }
+  }
+
+  &__title {
+    @apply text-2xl font-bold;
+  }
+
+  &__info-stack {
+    @apply flex items-center text-sm font-sans-secondary;
+    @apply text-gray-700 tracking-wide;
+
+    & > * {
+      @apply flex items-center;
+    }
+
+    & > *:not(:last-child)::after {
+      content: "";
+
+      @apply inline-block h-1 w-1 mx-2 rounded-full bg-gray-500 text-xl;
+    }
+  }
+
+  &__price {
+    @apply mt-auto text-primary text-2xl text-right font-sans-secondary;
+  }
+
+  @media screen(sm) {
+    max-width: 380px;
+  }
+}

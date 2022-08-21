@@ -2,6 +2,11 @@
   <div class="listing-card">
     <nuxt-link to="listings/elksdf23ej3po23">
       <div class="listing-card__wrapper">
+        <div class="listing-card__badge">
+          <Tag theme="primary">
+            unique configuration
+          </Tag>
+        </div>
         <div class="listing-card__image" />
         <div class="listing-card__body">
           <h3 class="listing-card__title">
@@ -17,7 +22,7 @@
             <Tag>Automatic</Tag>
           </div>
           <div class="listing-card__price">
-            €23,999
+            239 Millions
           </div>
         </div>
       </div>
@@ -31,6 +36,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import '~assets/sass/components/listing-card.scss';
-</style>
+<style scoped lang="pcss" src="~/assets/sass/components/listing-card.pcss" />
